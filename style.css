@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #101010;
+}
+.logo{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logoimg{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.seclogo{
+    display: none;
+}
+.navigation{
+    position: relative;
+    height: 5em;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-evenly; 
+    z-index: 1000;
+
+}
+.menu{
+    width: 50%;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.secmenu a{
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown a{
+    text-decoration: none;
+    color: white;
+}
+
+.searchdiv{
+   
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    justify-content: end;
+    padding-left: 30px;
+    
+}
+.get{
+    background-color: #fcaf17;
+    height: 40px;
+    width: 154px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.account img{
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+}
+.secaccount{
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+}
+.search img{
+    cursor: pointer;
+}
+.menus:hover{
+    text-decoration:underline ;
+    text-decoration-thickness:2px ;
+    text-underline-offset: 39px;
+}
+.handburger{
+    display: none;
+    cursor: pointer;
+    margin-top: 18px;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    border-radius: 2px;
+    
+    
+}
+.secmenu{
+   display: none;
+
+}
+.secsearchdiv{
+    display: none;
+}
+.seclogo{
+    display: none;
+
+}
+.secaccount{
+    display: none;
+}
+.thlogo{
+    display: none;
+}
+.ddmenu{
+    display: none;
+}
+/*second body*/
+.card
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkhead{
+            
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: all 0.3s ease;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+}
+.card-title{
+   margin-top: -200px;
+}
+.playnow{
+    height: 40px;
+    width: 180px;
+    padding-left: 50px;
+    padding-top: 5px;
+    border: 1px solid white;
+    border-radius: 5px;  
+}
+.playnow a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.playnow:hover{
+    background: #fcaf17;
+    color: #000000;
+}
+.moreview{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btmore{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    border-bottom: 4px solid #fcaf17 ;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.btmore:hover{
+    background: #fcaf17;
+    color: white;
+
+}
+.forth{
+    color: aliceblue;
+    padding-top: 60px;
+}
+.forthdiv{
+    
+    display: flex;
+    justify-content: center;
+  
+}
+.forthimg{
+    height: 25rem;
+    width: 70rem;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.hoverdiv{
+    padding: 100px;
+}
+.hoverimg{
+    transition:transform .3s;
+    border-radius: 10px;
+    
+}
+.hoverimg:hover{
+    transform: scale(1.05);
+
+}
+.Featured{
+    display: flex;
+    justify-content: left;
+    padding-left: 70px;
+    padding-top: 50px;
+    color: aliceblue;
+}
+
+.lastcard{
+    width: 20rem;
+    transition: .3s;
+}
+.lastcard:hover{
+    transform: scale(1.03);
+
+}
+.footerlogo{
+    width: 35px;
+    height: 35px;
+    margin-top: 30px;
+}
+.subbt{
+    
+    width: 170px;
+    height: 50px;
+    color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    border: 1px solid white;
+}
+.subbt:hover{
+    background-color: rgb(76, 76, 76,0.5);
+
+}
+.lastfoot p a{
+    text-decoration: none;
+    color: #968d8d;
+}
+.final{
+    width: 100%;
+    color: #968d8d;
+
+}
+.lastfoot p a:hover{
+    color: #fcaf17;
+}
+/*meadia quary*/
+
+@media(max-width:960px){
+    .Featured{
+        display: flex;
+        justify-content: left;
+        padding-left: 50px;
+        padding-top: 50px;
+        color: aliceblue;
+    }
+    .hoverdiv{
+        padding: 25px;
+    }
+   
+.secmenu{
+    width: 50%;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    justify-content: center;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+    display: none;
+}
+.secsearchdiv{
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    justify-content: end;
+}
+
+.searchdiv{
+    display: none;
+}
+.menu{
+    display: hidden;
+}
+}
+@media(max-width:860px){
+    
+    .Featured{
+        display: flex;
+        justify-content: left;
+        padding-left: 125px;
+        padding-top: 50px;
+        color: aliceblue;
+    }
+    
+    .maintext{
+        display: flex;
+        flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 12rem;
+    }
+    .secmenu{
+        display: none;
+    }
+    .ddmenu{
+        position: fixed;
+        display: flex;
+        top: 5em;
+        gap: 0;
+        flex-direction: column;
+        background-color: #000000;
+        width: 30%;
+        transition: 0.3s;
+        list-style: none;
+        opacity: 0;
+        
+    }
+    
+    .drmenus{
+        text-decoration: none;
+        color: white;
+       
+       
+    }
+    .ddmenu.active {
+        opacity: 100;
+        position: absolute;
+        display: flex;
+        top: 5em;
+        gap: 35px;
+        flex-direction: column;
+        background-color: #000000;
+        width: 30%;
+        transition: 0.3s;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+    .secsearchdiv{
+        display: none;
+    }
+    .logo{
+        display:none;
+    }
+    .thlogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .handburger{
+        display: block;
+    }
+    .handburger.active .bar:nth-child(1){
+        transform: translateY(8px);
+    }
+    .handburger.active .bar:nth-child(3){
+        transform: translateY(-8px);
+    }
+
+    .secaccount{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 35px;
+
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        
+    }
+    
+
+
+}
